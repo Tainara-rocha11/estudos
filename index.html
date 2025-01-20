@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/projeto_instagram/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Clone - Instagram</title>
 </head>
 
 <body>
     <div class="caixa-imagens">
         <!-- imagens -->
-        <img src="/projeto_instagram/img/celular.png" alt="imagem do feed do instagram" class="imagem-celular">
+        <img src="/img/celular.png" alt="imagem do feed do instagram" class="imagem-celular">
+        <img src="/img/insta1.png" class="foto-instagram" alt="foto-instagram">
+        <img src="/img/insta2.png" class="foto-instagram troca-imagem" alt="foto-instagram">
     </div>
 
     <div class="caixa-form">
-        <img src="/projeto_instagram/img/insta-logo.png" alt="logo do instagram" class="insta-logo">
+        <img src="/img/insta-logo.png" alt="logo do instagram" class="insta-logo">
         <!-- inputs de entrada de senha e login de usuario -->
         <input placeholder="Telefone, nome de usuário ou email">
         <input placeholder="Senha" type="password"> 
@@ -27,7 +29,19 @@
 
     </div>
 
+    <script>
+        let imagem = document.querySelector(".troca-imagem")
+        function trocaImagem() {
+            if (imagem.style.opacity == 0){
+                imagem.style.opacity = 1
+            } else {
+                imagem.style.opacity = 0 
+            }
+        }
+        setInterval(trocaImagem, 3000)
 
+        
+    </script>
 </body>
 
 </html>

@@ -18,9 +18,18 @@ body {
     margin-bottom: 20px;
     
 }
-
+.caixa-imagens {
+    position: relative;
+}
 .imagem-celular {
-    width: 520px;
+    width: 450px;
+}
+
+.foto-instagram {
+    height: 520px;
+    position: absolute;
+    top: 27px;
+    left: 153px;
 }
 
 .caixa-form {
